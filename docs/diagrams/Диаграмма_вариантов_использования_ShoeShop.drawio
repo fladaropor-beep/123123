@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="варианты-использования" name="Варианты использования">
+    <mxGraphModel dx="2929" dy="1625" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;" value="ShoeShop — диаграмма вариантов использования" vertex="1">
+          <mxGeometry height="40" width="640" x="280" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 4;strokeWidth=2;fillColor=none;verticalAlign=top;spacingTop=12;fontSize=16;fontStyle=1;" value="Интернет-магазин ShoeShop" vertex="1">
+          <mxGeometry height="610" width="700" x="250" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="customer" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=14;" value="Покупатель" vertex="1">
+          <mxGeometry height="130" width="100" x="70" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=14;" value="Администратор" vertex="1">
+          <mxGeometry height="130" width="120" x="1010" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="catalog" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=6;" value="Просмотреть каталог" vertex="1">
+          <mxGeometry height="60" width="230" x="330" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="details" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=6;" value="Посмотреть карточку товара" vertex="1">
+          <mxGeometry height="60" width="250" x="620" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cart" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=6;" value="Добавить товар в корзину" vertex="1">
+          <mxGeometry height="60" width="230" x="330" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="editcart" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=6;" value="Изменить корзину" vertex="1">
+          <mxGeometry height="60" width="230" x="620" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="checkout" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=6;" value="Оформить заказ" vertex="1">
+          <mxGeometry height="60" width="230" x="330" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="status" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=6;" value="Просмотреть статус заказа" vertex="1">
+          <mxGeometry height="60" width="250" x="620" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="manage" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=6;" value="Управлять товарами" vertex="1">
+          <mxGeometry height="60" width="230" x="330" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="orders" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=6;" value="Просматривать заказы" vertex="1">
+          <mxGeometry height="60" width="250" x="620" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="update" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=6;" value="Обновить статус заказа" vertex="1">
+          <mxGeometry height="60" width="230" x="475" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="cu0" edge="1" parent="1" source="customer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeWidth=1.5;" target="catalog" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu1" edge="1" parent="1" source="customer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeWidth=1.5;" target="details" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu2" edge="1" parent="1" source="customer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeWidth=1.5;" target="cart" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu3" edge="1" parent="1" source="customer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeWidth=1.5;" target="editcart" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="395" y="335" />
+              <mxPoint x="395" y="320" />
+              <mxPoint x="735" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cu4" edge="1" parent="1" source="customer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeWidth=1.5;" target="checkout" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu5" edge="1" parent="1" source="customer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeWidth=1.5;" target="status" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="395" y="335" />
+              <mxPoint x="395" y="350" />
+              <mxPoint x="745" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ad0" edge="1" parent="1" source="admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeWidth=1.5;" target="manage" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ad1" edge="1" parent="1" source="admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeWidth=1.5;" target="orders" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ad2" edge="1" parent="1" source="admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeWidth=1.5;" target="update" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1" edge="1" parent="1" source="catalog" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=open;endFill=0;strokeWidth=1.2;" target="details" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
