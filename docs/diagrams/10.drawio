@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-10-29T17:00:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="10-delete-product" name="D10. Удаление товара">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="s" value="Начало: выбран товар" style="whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=14;strokeWidth=1.5;align=center;verticalAlign=middle;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="410" y="20" width="200" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="click" value="Нажать «Удалить»" style="whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=14;strokeWidth=1.5;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="100" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="confirm" value="Пользователь подтвердил удаление?" style="whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=14;strokeWidth=1.5;align=center;verticalAlign=middle;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="400" y="190" width="220" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="order" value="Товар присутствует в заказе?" style="whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=14;strokeWidth=1.5;align=center;verticalAlign=middle;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="400" y="350" width="220" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="deny" value="Показать сообщение: товар из заказа удалить нельзя" style="whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=14;strokeWidth=1.5;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="370" width="290" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="delete" value="Удалить товар из базы данных" style="whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=14;strokeWidth=1.5;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="510" width="280" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="refresh" value="Обновить каталог товаров" style="whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=14;strokeWidth=1.5;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="610" width="260" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="e" value="Конец" style="whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=14;strokeWidth=1.5;align=center;verticalAlign=middle;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="420" y="720" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="e0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="s" target="click">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="click" target="confirm">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="Да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="confirm" target="order">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="Нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="confirm" target="e">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="Да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="order" target="deny">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="deny" target="e">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" value="Нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="order" target="delete">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="delete" target="refresh">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="refresh" target="e">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
