@@ -1,4 +1,4 @@
--- ShoeShop: схема по инструкциям для пары 9–10 (MySQL 8.0+)
+-- ShoeShop: схема 
 -- Таблицы и столбцы сохраняют имена CSV: categories, manufacturers, suppliers,
 -- products, roles, users, pvz, orderstatus, orders, prodorders.
 CREATE DATABASE IF NOT EXISTS shoe_shop CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
